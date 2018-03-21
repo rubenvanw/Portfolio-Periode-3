@@ -14,4 +14,25 @@ $( document ).ready(function() {
         }
     });
 
+    $("#about").click(function () {
+        $('html,body').animate(
+            {
+                scrollTop: $("#paginaTwee").offset().top
+            }, 1000);
+    });
+
+    $("#projects").click(function () {
+        $('html,body').animate(
+            {
+                scrollTop: $("#paginaVier").offset().top
+            }, 1000);
+    });
+
+    $("#contact").click(function () {
+        $('html,body').animate(
+            {
+                scrollTop: $("#paginaVijf").offset().top
+            }, 1000);
+    });
+
 });

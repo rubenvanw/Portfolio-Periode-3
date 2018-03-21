@@ -10,7 +10,8 @@ body {
   display: flex;
   justify-content: center;
   position: fixed;
-  transition: 0.5s; }
+  transition: 0.5s;
+  font-size: 3vh; }
 
 .navigatie {
   width: 80%;
@@ -38,7 +39,8 @@ body {
       padding: 0;
       margin: 0.5%;
       text-decoration: none;
-      color: white; }
+      color: white;
+      cursor: pointer; }
 
 .navClass {
   width: 100%;
@@ -58,8 +60,6 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  /*background:url("img/achtergrond.jpg") no-repeat -100px -480px;*/
-  /*background-size: auto;*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,7 +68,7 @@ body {
 h2.containerheaderTwee {
   padding: 0;
   margin: 0;
-  font-size: 100px; }
+  font-size: 15vh; }
 
 .containerMain {
   display: flex;
