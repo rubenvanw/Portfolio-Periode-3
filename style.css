@@ -11,7 +11,7 @@ body {
   justify-content: center;
   position: fixed;
   transition: 0.5s;
-  font-size: 3vh; }
+  font-size: 2.75vh; }
 
 .navigatie {
   width: 80%;
@@ -41,6 +41,8 @@ body {
       text-decoration: none;
       color: white;
       cursor: pointer; }
+    .navigatie ul li a:hover {
+      text-decoration: underline; }
 
 .navClass {
   width: 100%;
@@ -95,7 +97,7 @@ h2.containerheaderTwee {
 /*Pagina twee-------------------------------------------------------------------------------------------*/
 .containerTwee {
   width: 100%;
-  height: 100vh;
+  height: 75vh;
   color: white;
   background-color: black;
   background-repeat: no-repeat;
@@ -107,13 +109,13 @@ h2.containerheaderTwee {
 
 .linkerHelft {
   width: 50%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center; }
   .linkerHelft main {
     width: 70%;
-    height: 75%;
+    height: 70%;
     text-align: center; }
     .linkerHelft main h2 {
       border-bottom: dashed 1px white;
@@ -129,7 +131,7 @@ h2.containerheaderTwee {
   align-items: center; }
   .rechterhelft main {
     width: 70%;
-    height: 75%;
+    height: 70%;
     display: flex;
     flex-direction: column;
     text-align: center; }
@@ -147,12 +149,13 @@ h2.containerheaderTwee {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  font-size: 5vh; }
 
 .skillIcon {
   padding: 2.5%;
   margin: 0 1%;
-  font-size: 15vh;
+  font-size: 13vh;
   text-align: center; }
   .skillIcon p {
     margin: 0;
@@ -179,10 +182,6 @@ h2.containerheaderTwee {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap; }
-  .containerVier .projectImg {
-    width: 35vw;
-    height: 35vh;
-    margin: 1%; }
 
 /*Pagina vijf------------------------------------------------------------------------------------------*/
 .containerVijf {
