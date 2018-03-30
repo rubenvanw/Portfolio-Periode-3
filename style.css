@@ -11,7 +11,7 @@ body {
   justify-content: center;
   position: fixed;
   transition: 0.5s;
-  font-size: 2.75vh; }
+  font-size: 3vh; }
 
 .navigatie {
   width: 80%;
@@ -27,7 +27,7 @@ body {
   color: white; }
 
 .navigatie ul {
-  width: 25%;
+  width: 35%;
   padding: 0;
   margin: 0; }
   .navigatie ul li {
@@ -155,7 +155,7 @@ h2.containerheaderTwee {
 .skillIcon {
   padding: 2.5%;
   margin: 0 1%;
-  font-size: 13vh;
+  font-size: 10vh;
   text-align: center; }
   .skillIcon p {
     margin: 0;
@@ -166,22 +166,70 @@ h2.containerheaderTwee {
 .containerVier {
   width: 100%;
   height: 100vh;
-  color: white;
   background-color: black;
   display: flex;
-  flex-direction: column; }
-  .containerVier h2 {
+  position: relative; }
+  .containerVier .wrap {
     width: 100%;
-    height: 10%;
-    padding: 0;
-    margin-top: 5%;
-    text-align: center; }
-  .containerVier main {
-    width: 100%;
-    height: 90%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap; }
+    height: 100vh;
+    position: relative;
+    font-size: 5vh; }
+    .containerVier .wrap .slider {
+      width: 100%;
+      height: 100%; }
+      .containerVier .wrap .slider .slide1 {
+        width: 100%;
+        height: 100%;
+        color: black;
+        background: url("img/img1.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative; }
+      .containerVier .wrap .slider .slide2 {
+        width: 100%;
+        height: 100%;
+        color: white;
+        background: url("img/img2.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative; }
+      .containerVier .wrap .slider .slide3 {
+        width: 100%;
+        height: 100%;
+        color: white;
+        background: url("img/trafficlights.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative; }
+    .containerVier .wrap .sliderArrow {
+      width: 0;
+      height: 0;
+      border-style: solid;
+      cursor: pointer;
+      position: absolute;
+      top: 50%; }
+    .containerVier .wrap #arrow-left {
+      border-width: 30px 40px 30px 0;
+      border-color: transparent #ffffff transparent transparent;
+      left: 0;
+      margin-left: 5%; }
+    .containerVier .wrap #arrow-right {
+      border-width: 30px 0 30px 40px;
+      border-color: transparent transparent transparent #ffffff;
+      right: 0;
+      margin-right: 5%; }
 
 /*Pagina vijf------------------------------------------------------------------------------------------*/
 .containerVijf {
