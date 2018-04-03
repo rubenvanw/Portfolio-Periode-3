@@ -201,6 +201,7 @@ h2.containerheaderTwee {
   background-color: $backgroundColor;
   display: flex;
   position: relative;
+  transition: 0.4s;
   .wrap {
     width: 100%;
     height: 100vh;
@@ -280,6 +281,7 @@ h2.containerheaderTwee {
   width: 100%;
   height: 90vh;
   color: white;
+  overflow: hidden;
   background-color: $backgroundColor;
   display: flex;
   justify-content: center;
