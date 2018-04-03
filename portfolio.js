@@ -14,6 +14,14 @@ $(document).ready(function () {
         }
     });
 
+
+    $("#Ruben").click(function () {
+        $('html,body').animate(
+            {
+                scrollTop: $("#home").offset().top
+            }, 1000);
+    });
+
     $("#about").click(function () {
         $('html,body').animate(
             {
