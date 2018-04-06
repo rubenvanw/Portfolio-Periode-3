@@ -16,7 +16,7 @@ body {
 
 .navigatie {
   width: 80%;
-  height: 9%;
+  height: 100%;
   margin: 1%;
   display: flex;
   justify-content: space-between;
@@ -278,5 +278,50 @@ footer {
   background-color: black;
   display: flex;
   justify-content: center; }
+
+@media screen and (max-width: 800px) {
+  .navContainer {
+    text-align: center;
+    font-size: 4vh; }
+
+  .navigatie {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+  .headerEen h1 {
+    display: none; }
+
+  .navigatie ul {
+    width: 100%; }
+
+  h2.containerheaderTwee {
+    font-size: 10vh; }
+
+  /*Pagina Twee------------------------------------------------------------------------------------------*/
+  .containerTwee {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vh; }
+
+  .linkerHelft {
+    width: 100%;
+    height: 50%; }
+
+  .rechterhelft {
+    width: 100%;
+    height: 50%; }
+    .rechterhelft main {
+      margin-top: 5%; }
+
+  /*Pagina drie------------------------------------------------------------------------------------------*/
+  .containerDrie {
+    display: none; }
+
+  .containerVijf main {
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
