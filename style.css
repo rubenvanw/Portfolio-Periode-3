@@ -130,7 +130,7 @@ h2.containerheaderTwee {
       padding: 1.5%;
       margin: 0 5%; }
     .linkerHelft main p {
-      font-size: 2vh;
+      font-size: 2.5vh;
       font-weight: bold; }
 
 .rechterhelft {
@@ -352,7 +352,7 @@ footer {
 
   .containerVijf main {
     width: 100%; } }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 380px) {
   .navContainer {
     text-align: center;
     font-size: 3.25vh;
@@ -434,7 +434,7 @@ footer {
         margin: 0;
         padding: 0; }
         .containerVijf main ul li {
-          margin: 2%; }
+          margin: 3%; }
         .containerVijf main ul a {
           width: 185.28px;
           height: 48px; } }
