@@ -165,7 +165,7 @@ h2.containerheaderTwee {
   align-items: center;
   main {
     width: 70%;
-    height: 70%;
+    height: auto;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -341,15 +341,21 @@ footer {
   position: fixed;
   right: 15px;
   bottom: 15px;
-  width: 50px;
-  height: 50px;
-  text-align: center;
+  width: 7.5vh;
+  height: 7.5vh;
   background: rgba(52,58,64,.5);
   line-height: 45px;
   cursor: pointer;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.75s;
+  .fa-angle-up:before {
+    font-size: 3vh;
+  }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .navContainer {
     text-align: center;
     font-size: 4vh;
@@ -370,8 +376,8 @@ footer {
     font-size: 10vh;
   }
   .arrow {
-    width: 75px;
-    height: 75px;
+    width: 8vh;
+    height: 8vh;
     border: solid 4px white;
     font-size: 4vh;
   }
@@ -393,6 +399,7 @@ footer {
     width: 100%;
     height: 50%;
     main {
+      width:60%;
       margin-top: 5%;
       p {
         font-size: 2vh;
@@ -409,7 +416,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 420px) {
   .navContainer {
     text-align: center;
     font-size: 3.25vh;
@@ -459,6 +466,7 @@ footer {
     width: 100%;
     height: 50%;
     main {
+      width:80%;
       margin-top: 5%;
       h2 {
         display: none;

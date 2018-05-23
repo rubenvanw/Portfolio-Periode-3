@@ -14,6 +14,12 @@ $(document).ready(function () {
         }
     });
 
+    $(window).scroll(function () {
+        if ($(document).scrollTop() < 200) {
+            $('#scroll-to-top').addClass('scroll-to-top');
+        }
+    });
+
     $("#Ruben").click(function () {
         $('html,body').animate(
             {
