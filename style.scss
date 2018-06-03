@@ -82,17 +82,23 @@ body {
   text-align: center;
 }
 
-h2.containerheaderTwee {
-  padding: 0;
-  margin: 0;
-  font-size: 15vh;
-}
 
 .containerMain {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+h2.containerheaderTwee {
+  padding: 0;
+  margin: 0;
+  font-size: 15vh;
+}
+
+.containerMain p {
+  line-height: 1.68;
+  font-size: 3vh;
 }
 
 .arrow {
@@ -108,10 +114,6 @@ h2.containerheaderTwee {
   cursor: pointer;
 }
 
-.containerMain p {
-  line-height: 1.68;
-  font-size: 3vh;
-}
 
 /*Pagina twee-------------------------------------------------------------------------------------------*/
 
@@ -131,7 +133,7 @@ h2.containerheaderTwee {
 .linkerHelft {
   width: 50%;
   height: 100%;
-  background: linear-gradient(180deg, black, #42dca3, black);
+  background: linear-gradient(180deg, #42dca3, #42dca3, black);
   clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
   display: flex;
   justify-content: center;
@@ -146,7 +148,7 @@ h2.containerheaderTwee {
     h2 {
       font-size: 5vh;
       border-bottom: solid 3px black;
-      padding: 1.5%;
+      padding: 1%;
       margin: 0 5%;
     }
     p {
@@ -171,7 +173,6 @@ h2.containerheaderTwee {
     text-align: center;
     p {
       font-size: 3vh;
-      font-weight: bold;
     }
   }
 }
@@ -180,25 +181,48 @@ h2.containerheaderTwee {
 
 .containerDrie {
   width: 100%;
-  height: 25vh;
-  color: #42dca3;
+  height: 100vh;
   background-color: $backgroundColor;
+  color: white;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  font-size: 5vh;
-}
-
-.skillIcon {
-  padding: 2.5%;
-  margin: 0 1%;
-  font-size: 10vh;
-  text-align: center;
-  p {
-    margin: 0;
-    font-size: 1.5rem !important;
-    text-align: center;
+  .linkerHelftTwee {
+    width: 50%;
+    height: 100%;
+    color: black;
+    background: linear-gradient(180deg, #42dca3, #42dca3, black);
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    border-top: solid black 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      font-size: 5vh;
+      border-bottom: solid 3px black;
+      padding: 1%;
+      margin: 0 5%;
+    }
+    p {
+      font-size: 2.5vh;
+      font-weight: bold;
+    }
+  }
+  .rechterhelftTwee {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .skillIcon {
+      font-size: 4rem;
+      text-align: center;
+      margin-bottom: 3%;
+      p {
+        font-size: 3vh;
+      }
+    }
   }
 }
 
@@ -343,10 +367,10 @@ footer {
   bottom: 15px;
   width: 7.5vh;
   height: 7.5vh;
-  background: rgba(52,58,64,.5);
+  background: rgba(52, 58, 64, .5);
   line-height: 45px;
   cursor: pointer;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   transition: 0.75s;
@@ -389,30 +413,53 @@ footer {
     justify-content: center;
     align-items: center;
     font-size: 2vh;
-  }
-  .linkerHelft {
-    width: 100%;
-    height: 50%;
-    clip-path: polygon(0% 0%, 100% 1%, 100% 50%, 100% 100%, 0% 100%);
-  }
-  .rechterhelft {
-    width: 100%;
-    height: 50%;
-    main {
-      width:60%;
-      margin-top: 5%;
-      p {
-        font-size: 2vh;
+    .linkerHelft {
+      width: 100%;
+      height: 50%;
+      clip-path: polygon(0% 0%, 100% 1%, 100% 50%, 100% 100%, 0% 100%);
+    }
+    .rechterhelft {
+      width: 100%;
+      height: 50%;
+      main {
+        width: 60%;
+        margin-top: 5%;
+        p {
+          font-size: 2vh;
+        }
       }
     }
   }
 
   /*Pagina drie------------------------------------------------------------------------------------------*/
   .containerDrie {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vh;
+    .linkerHelftTwee {
+      width: 100%;
+      height: 50%;
+      clip-path: polygon(0% 0%, 100% 1%, 100% 50%, 100% 100%, 0% 100%);
+    }
+    .rechterhelftTwee {
+      width: 100%;
+      height: 75%;
+      .skillIcon {
+        font-size: 5vh;
+        p {
+          font-size: 2vh;
+        }
+      }
+    }
   }
-  .containerVijf main {
-    width: 100%;
+
+  /*Pagina vijf------------------------------------------------------------------------------------------*/
+  .containerVijf {
+    main {
+      width: 85%;
+    }
   }
 }
 
@@ -453,39 +500,53 @@ footer {
     justify-content: center;
     align-items: center;
     font-size: 2vh;
-  }
-  .linkerHelft {
-    width: 100%;
-    height: 50%;
-    clip-path: polygon(0% 0%, 100% 1%, 100% 50%, 100% 100%, 0% 100%);
-    h2 {
-      display: none;
+    .linkerHelft {
+      width: 100%;
+      height: 50%;
+      clip-path: polygon(0% 0%, 100% 1%, 100% 50%, 100% 100%, 0% 100%);
     }
-  }
-  .rechterhelft {
-    width: 100%;
-    height: 50%;
-    main {
-      width:80%;
-      margin-top: 5%;
-      h2 {
-        display: none;
+    .rechterhelft {
+      width: 100%;
+      height: 50%;
+      main {
+        width: 80%;
+        margin-top: 5%;
+        h2 {
+          display: none;
+        }
+        p {
+          font-size: 1.75vh;
+        }
       }
-      p {
-        font-size: 1.75vh;
+      .scroll-to-top {
+        display: block;
       }
     }
-    .scroll-to-top {
-      display: block;
-    }
+
   }
 
   /*Pagina drie------------------------------------------------------------------------------------------*/
   .containerDrie {
-    display: none;
-  }
-  .containerVijf main {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vh;
+    .linkerHelftTwee {
+      width: 100%;
+      height: 50%;
+      clip-path: polygon(0% 0%, 100% 1%, 100% 50%, 100% 100%, 0% 100%);
+    }
+    .rechterhelftTwee {
+      width: 100%;
+      height: 75%;
+      .skillIcon {
+        font-size: 5vh;
+        p {
+          font-size: 1.75vh;
+        }
+      }
+    }
   }
 
   /*Pagina vier------------------------------------------------------------------------------------------*/
@@ -498,6 +559,7 @@ footer {
   .containerVijf {
     text-align: center;
     main {
+      width: 100%;
       display: flex;
       flex-direction: column;
       height: 80%;

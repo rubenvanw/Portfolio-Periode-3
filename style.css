@@ -69,16 +69,20 @@ body {
   align-items: center;
   text-align: center; }
 
-h2.containerheaderTwee {
-  padding: 0;
-  margin: 0;
-  font-size: 15vh; }
-
 .containerMain {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+
+h2.containerheaderTwee {
+  padding: 0;
+  margin: 0;
+  font-size: 15vh; }
+
+.containerMain p {
+  line-height: 1.68;
+  font-size: 3vh; }
 
 .arrow {
   width: 50px;
@@ -91,10 +95,6 @@ h2.containerheaderTwee {
   justify-content: center;
   align-items: center;
   cursor: pointer; }
-
-.containerMain p {
-  line-height: 1.68;
-  font-size: 3vh; }
 
 /*Pagina twee-------------------------------------------------------------------------------------------*/
 .containerTwee {
@@ -112,7 +112,7 @@ h2.containerheaderTwee {
 .linkerHelft {
   width: 50%;
   height: 100%;
-  background: linear-gradient(180deg, black, #42dca3, black);
+  background: linear-gradient(180deg, #42dca3, #42dca3, black);
   clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
   display: flex;
   justify-content: center;
@@ -127,7 +127,7 @@ h2.containerheaderTwee {
     .linkerHelft main h2 {
       font-size: 5vh;
       border-bottom: solid 3px black;
-      padding: 1.5%;
+      padding: 1%;
       margin: 0 5%; }
     .linkerHelft main p {
       font-size: 2.5vh;
@@ -147,30 +147,48 @@ h2.containerheaderTwee {
     flex-direction: column;
     text-align: center; }
     .rechterhelft main p {
-      font-size: 3vh;
-      font-weight: bold; }
+      font-size: 3vh; }
 
 /*Pagina Drie-------------------------------------------------------------------------------------------*/
 .containerDrie {
   width: 100%;
-  height: 25vh;
-  color: #42dca3;
+  height: 100vh;
   background-color: black;
+  color: white;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  font-size: 5vh; }
-
-.skillIcon {
-  padding: 2.5%;
-  margin: 0 1%;
-  font-size: 10vh;
-  text-align: center; }
-  .skillIcon p {
-    margin: 0;
-    font-size: 1.5rem !important;
-    text-align: center; }
+  flex-direction: row; }
+  .containerDrie .linkerHelftTwee {
+    width: 50%;
+    height: 100%;
+    color: black;
+    background: linear-gradient(180deg, #42dca3, #42dca3, black);
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    border-top: solid black 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .containerDrie .linkerHelftTwee h2 {
+      font-size: 5vh;
+      border-bottom: solid 3px black;
+      padding: 1%;
+      margin: 0 5%; }
+    .containerDrie .linkerHelftTwee p {
+      font-size: 2.5vh;
+      font-weight: bold; }
+  .containerDrie .rechterhelftTwee {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+    .containerDrie .rechterhelftTwee .skillIcon {
+      font-size: 4rem;
+      text-align: center;
+      margin-bottom: 3%; }
+      .containerDrie .rechterhelftTwee .skillIcon p {
+        font-size: 3vh; }
 
 /*Pagina Vier-------------------------------------------------------------------------------------------*/
 .containerVier {
@@ -337,27 +355,41 @@ footer {
     justify-content: center;
     align-items: center;
     font-size: 2vh; }
-
-  .linkerHelft {
-    width: 100%;
-    height: 50%;
-    clip-path: polygon(0% 0%, 100% 1%, 100% 50%, 100% 100%, 0% 100%); }
-
-  .rechterhelft {
-    width: 100%;
-    height: 50%; }
-    .rechterhelft main {
-      width: 60%;
-      margin-top: 5%; }
-      .rechterhelft main p {
-        font-size: 2vh; }
+    .containerTwee .linkerHelft {
+      width: 100%;
+      height: 50%;
+      clip-path: polygon(0% 0%, 100% 1%, 100% 50%, 100% 100%, 0% 100%); }
+    .containerTwee .rechterhelft {
+      width: 100%;
+      height: 50%; }
+      .containerTwee .rechterhelft main {
+        width: 60%;
+        margin-top: 5%; }
+        .containerTwee .rechterhelft main p {
+          font-size: 2vh; }
 
   /*Pagina drie------------------------------------------------------------------------------------------*/
   .containerDrie {
-    display: none; }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vh; }
+    .containerDrie .linkerHelftTwee {
+      width: 100%;
+      height: 50%;
+      clip-path: polygon(0% 0%, 100% 1%, 100% 50%, 100% 100%, 0% 100%); }
+    .containerDrie .rechterhelftTwee {
+      width: 100%;
+      height: 75%; }
+      .containerDrie .rechterhelftTwee .skillIcon {
+        font-size: 5vh; }
+        .containerDrie .rechterhelftTwee .skillIcon p {
+          font-size: 2vh; }
 
+  /*Pagina vijf------------------------------------------------------------------------------------------*/
   .containerVijf main {
-    width: 100%; } }
+    width: 85%; } }
 @media screen and (max-width: 420px) {
   .navContainer {
     text-align: center;
@@ -394,33 +426,41 @@ footer {
     justify-content: center;
     align-items: center;
     font-size: 2vh; }
-
-  .linkerHelft {
-    width: 100%;
-    height: 50%;
-    clip-path: polygon(0% 0%, 100% 1%, 100% 50%, 100% 100%, 0% 100%); }
-    .linkerHelft h2 {
-      display: none; }
-
-  .rechterhelft {
-    width: 100%;
-    height: 50%; }
-    .rechterhelft main {
-      width: 80%;
-      margin-top: 5%; }
-      .rechterhelft main h2 {
-        display: none; }
-      .rechterhelft main p {
-        font-size: 1.75vh; }
-    .rechterhelft .scroll-to-top {
-      display: block; }
+    .containerTwee .linkerHelft {
+      width: 100%;
+      height: 50%;
+      clip-path: polygon(0% 0%, 100% 1%, 100% 50%, 100% 100%, 0% 100%); }
+    .containerTwee .rechterhelft {
+      width: 100%;
+      height: 50%; }
+      .containerTwee .rechterhelft main {
+        width: 80%;
+        margin-top: 5%; }
+        .containerTwee .rechterhelft main h2 {
+          display: none; }
+        .containerTwee .rechterhelft main p {
+          font-size: 1.75vh; }
+      .containerTwee .rechterhelft .scroll-to-top {
+        display: block; }
 
   /*Pagina drie------------------------------------------------------------------------------------------*/
   .containerDrie {
-    display: none; }
-
-  .containerVijf main {
-    width: 100%; }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vh; }
+    .containerDrie .linkerHelftTwee {
+      width: 100%;
+      height: 50%;
+      clip-path: polygon(0% 0%, 100% 1%, 100% 50%, 100% 100%, 0% 100%); }
+    .containerDrie .rechterhelftTwee {
+      width: 100%;
+      height: 75%; }
+      .containerDrie .rechterhelftTwee .skillIcon {
+        font-size: 5vh; }
+        .containerDrie .rechterhelftTwee .skillIcon p {
+          font-size: 1.75vh; }
 
   /*Pagina vier------------------------------------------------------------------------------------------*/
   .sliderTitle {
@@ -431,6 +471,7 @@ footer {
   .containerVijf {
     text-align: center; }
     .containerVijf main {
+      width: 100%;
       display: flex;
       flex-direction: column;
       height: 80%; }
